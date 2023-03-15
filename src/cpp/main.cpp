@@ -121,7 +121,7 @@ int main() {
 
         threshold += 0.0005;
 
-        while(!q.empty() && q.top().weight <= threshold) {
+        while(!q.empty() && q.top().weight <= sqrt(threshold)) {
             int v1 = q.top().y1 * WIDTH + q.top().x1;
             int v2 = q.top().y2 * WIDTH + q.top().x2;
             q.pop();
